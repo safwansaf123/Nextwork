@@ -6,7 +6,7 @@ import Header from "./Props";
 
 import Prop from "./PROPS/page";
 
-
+import Routegroups from "./(Route-Groups)/page"
 
 export default function Home() {
   return (
@@ -21,8 +21,12 @@ export default function Home() {
 <Link href='/Rendering'>      <h4> 7-Rendering </h4>  </Link>
 <Link href='/Address'> <h5> 8-Route-Groups1 </h5></Link>
 <Link href='/workplaces'> <h5> 9-Route-Groups 2 </h5></Link>
+<Link href={'./app/(Route-Groups)'}><h5> 8-9-Route-Groups 1&2 </h5></Link>
 <Link href='/Website'> <h5> 10-governer web page </h5></Link>
 <Link href={'/Commonlayout'}> <h5> 11-Common layout </h5></Link>
+<Link href={'/Dynamiclayout'}>      <h4> 12-Dynamiclayout </h4>  </Link>
+<Link href='/Dynamic-Routings'>      <h4> 13-Dynamic-Routing </h4>  </Link>
+
 
 
 
@@ -31,6 +35,8 @@ export default function Home() {
 <Prop profile={"62829"}/> <h2>data written in page prop </h2>
 
 <h1> hello safwan say hi to world from okasha </h1>
+
+<Routegroups/>
 </div>
   );
 }
